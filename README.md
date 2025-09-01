@@ -27,31 +27,9 @@ Aplicação web para organizar tarefas (criar, listar, atualizar e excluir). Pro
 
 ## CODIGOS
 
----
-
-- index.html
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task Manager</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Task Manager</h1>
-    <form id="task-form">
-      <input type="text" id="task-input" placeholder="Digite sua tarefa" required>
-      <button type="submit">Adicionar</button>
-    </form>
-    <ul id="task-list"></ul>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
 
 ---
+
 
 - style.css
 body {
@@ -145,5 +123,6 @@ taskForm.addEventListener('submit', (e) => {
 
 ## Como executar
 - Cole os seguintes codigos em uma pasta "Task-Manager" ou seu nome de preferencia
-- Cada um em seu formato (index.html / style.css / script.js)
+- Cada um em seu formato (style.css / script.js)
 - Abra o index.html no seu navegador padrão
+- Colocarei todos os arquivos juntos, juntamente do index.html que esta faltando
