@@ -5,16 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task Manager</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilo do Historico */ 
+    #historyTab {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      padding: 5px 10px;
+      background-color: #7b1113;
+      color: white;
+      border-radius: 5px;
+    }
+    #history {
+      display: none;
+      position: fixed;
+      top: 50px;
+      right: 10px;
+      width: 300px;
+      max-height: 80%;
+      overflow-y: auto;
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px gray;
+    }
+    .history-item {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+    }
+    .classify {
+      font-size: 0.8em;
+      color: #555;
+      font-weight: bold;
+    }
+    .completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
+<div class="container">
     <h1>Task Manager</h1>
     <form id="task-form">
       <input type="text" id="task-input" placeholder="Digite sua tarefa" required>
-      <button type="submit">Adicionar</button>
+      <label for="status">Prioridade:</label>
+      <select id="status" name="status">
+        <option value="Urgente">Urgente</option>
+        <option value="Médio">Médio</option>
+        <option value="Baixo">Baixo</option>
+      </select>
     </form>
     <ul id="task-list"></ul>
   </div>
-  <script src="script.js"></script>
+  <!-- Aba do histórico já integrada no HTML -->
+<div id="historyTab">Histórico</div>
+<div id="history"></div>
+
+<script src="script.js"></script>
 </body>
 </html>

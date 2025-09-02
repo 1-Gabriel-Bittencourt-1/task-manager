@@ -1,52 +1,105 @@
+/* ====== ESTILOS GERAIS ====== */
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  font-family: Roman, sans-serif;
+  margin: 0;
+  padding: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+
+  /* Fundo com imagem */
+  background-image: url('Romantismo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
+/* ====== CONTAINER PRINCIPAL ====== */
 .container {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7); /* semi-transparente para ler o texto */
   padding: 20px 30px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  width: 300px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  width: 320px;
 }
 
+/* ====== TÍTULO ====== */
 h1 {
   text-align: center;
+  margin-bottom: 20px;
+  color: #333;
 }
 
+/* ====== FORMULÁRIO DE TAREFAS ====== */
 #task-form {
   display: flex;
   gap: 10px;
+  margin-bottom: 15px;
 }
 
 #task-form input {
   flex: 1;
-  padding: 5px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 #task-form button {
-  padding: 5px 10px;
+  padding: 6px 12px;
+  border: none;
+  background: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
 }
 
+#task-form button:hover {
+  background: #0056b3;
+}
+
+/* ====== LISTA DE TAREFAS ====== */
 #task-list {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
+  margin: 0;
 }
 
 #task-list li {
   display: flex;
   justify-content: space-between;
-  padding: 5px 0;
+  align-items: center;
+
+  padding: 8px 5px;
   border-bottom: 1px solid #ddd;
 }
 
 #task-list li.completed {
   text-decoration: line-through;
-  color: gray;
+  color: purple;
+}
+/* ====== Tarefas por prioridade ====== */
+li.Urgente {
+  background-color: #FF0000; 
+  color: #000000;
+  font-weight: bold;
+}
+
+li.Médio {
+  background-color: #FFFF00; 
+  color: black;
+}
+
+li.Baixo {
+  background-color: #0000FF; 
+  color: black;
+}
+
+/* Tarefas concluídas */
+li.Concluída {
+  text-decoration: line-through;
+  color: black;
+  background-color: blueviolet;
 }
