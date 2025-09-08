@@ -11,6 +11,7 @@ Aplicação web para organizar tarefas (criar, listar, atualizar e excluir). Pro
 - Consolidar fundamentos de desenvolvimento.
 - Praticar padrões simples e claros.
 - Entregar algo utilizável e fácil de entender.
+- Praticar Front-end
 
 
 ---
@@ -31,3 +32,12 @@ Aplicação web para organizar tarefas (criar, listar, atualizar e excluir). Pro
 - 3 Arquivos: index.html / style.css / script.js
 - Abra o "index.html" em seu navegador de preferencia 
 - Aproveite o Task Manager ;)
+
+
+---
+
+
+## Oque eu Aprendi??
+-Front-end (HTML, CSS, JS): Estruturar páginas, estilizar componentes e dar interatividade. Você aprendeu a manipular o DOM (Document Object Model) pra criar, atualizar e excluir tarefas em tempo real.
+-Organização de código: Separar responsabilidades: HTML como esqueleto, CSS como aparência, JS como lógica. Isso é base de qualquer aplicação web.
+-CRUD na prática: Criar, Ler, Atualizar e Deletar dados — um dos fundamentos de sistemas. Até quando usamos só front-end, esse conceito já foi aplicado.
